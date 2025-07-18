@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>ShopEase - Products</h1>
+    <a href="cart.html" style="float: right; color: white; margin-right: 20px;">View Cart</a>
+  </header>
+
+  <main>
+    <div class="filters">
+      <label for="priceRange">Filter by Price:</label>
+      <select id="priceRange" onchange="filterProducts()">
+        <option value="all">All</option>
+        <option value="0-499">Under ₹500</option>
+        <option value="500-999">₹500 - ₹999</option>
+        <option value="1000-9999">Above ₹1000</option>
+      </select>
+    </div>
+
+    <div id="product-grid" class="product-grid"></div>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
